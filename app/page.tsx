@@ -8,7 +8,7 @@ export default async function Home() {
         "x-apikey": "LlVehV3Eq50aKh8InKkjsOl6AVzjKFV4a6RoSGDChmwzOvU5"
       }
     }).then(r => r.json()),
-    fetch("http://localhost:3001/api/stations", {
+    fetch("http://localhost:3000/api/stations", {
       method: "GET",
       headers: {
         "x-apikey": "LlVehV3Eq50aKh8InKkjsOl6AVzjKFV4a6RoSGDChmwzOvU5"
