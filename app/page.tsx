@@ -22,6 +22,9 @@ export default async function Home() {
     return x
     */
   ])
+  const stationMap = new Map(stations.stations.map(s => [s.name, {crs: s.crsCode}]))
+  console.log(stationMap.get("Birmingham New Street"))
+
   /*
   const stationMap = stations.stations.map(s => ({Name: "babyChangingAvailable"}))
   console.log(stationMap.get("Name"))
@@ -42,7 +45,7 @@ export default async function Home() {
             To get started, edit the page.tsx file.
           </h1>
           <div>
-          {stations.map(s => (<option key = {s.id} value = {s.id}>{s.id}</option>))}
+          {/*stations.map(s => (<option key = {s.crs} value = {s.name}>{s.name}</option>))*/} 
           {(JSON.stringify(api))}
           </div>
           <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">

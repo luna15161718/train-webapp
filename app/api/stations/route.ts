@@ -5,6 +5,6 @@ export async function GET() {
         "x-apikey": "oQbM0WJLhR7L9bEubMlVyPwtH7uV53AlUcdOTze3AsG9Jk1V"
       }
     }).then(r => r.json())
-    const stationMap = stations.stations.map(s => ({id: s.name}))
-    return Response.json(stationMap)
+    //const stationMap = stations.stations.map(s => ({crs: s.crs}))
+    return Response.json(stations)
 }
